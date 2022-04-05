@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+}
+
+main {
+  width: 25rem;
+  background-color: hsl(213, 19%, 18%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+header > img {
+  padding: 0.6rem;
+  background-color: hsl(214, 18%, 25%);
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.texts-container > h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.texts-container > p {
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.texts-container {
+  margin-bottom: 1.2rem;
+}
+
+.rates {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.rate {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(214, 18%, 25%);
+  transition: 0.2s;
+}
+.rate:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+#button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  color: white;
+  border-radius: 20px;
+  height: 2.2rem;
+  border: none;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+footer {
+  margin-top: 5rem;
+}
+footer > a {
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+  transition: 0.1s;
+}
+footer > a:hover {
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: hsl(217, 12%, 63%);
+}
+.active:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.thank-you-state{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  background-color: hsl(213, 19%, 18%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.image-container{
+  margin-bottom: 2rem;
+}
+
+.ty{
+  text-align: center;
+}
+.ty > p{
+  opacity: 0.7;
+}
+
+.rate-result{
+  margin-bottom: 2rem;
+  background-color: hsl(214, 18%, 25%);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.rate-result > p{
+  color: hsl(25, 97%, 53%);
+}
+
+
+@media (max-width: 600px) {
+  main{
+    width: 90%;
+  }
+
+  .texts-container > h2{
+    font-size: 1.3em;
+  }
+  .texts-container > p{
+    font-size: 0.9em;
+  }
+
+  .rate{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.85em;
+  }
+
+  #button{
+    font-size: 0.9em;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  .thank-you-state{
+    width: 90%;
+  }
+}
